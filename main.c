@@ -1,6 +1,7 @@
 #include<stdio.h>
 
 int main(){
+	int j,p=1;
 	int a,a2,b;
 	int i;
 	char c;
@@ -20,6 +21,13 @@ int main(){
 
 	if(c=='/'){
 		printf("%d\n",a/b);
+  }
+	
+	if(c=='P'){
+		for(j=a; j>=b; j--){
+			p *= j;
+		}
+		printf("%d\n", p);
 	}
 	if(c=='^'){
 	a2=a;
